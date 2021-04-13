@@ -1,0 +1,46 @@
+{
+  "name": "incentivesservice",
+  "version": "1.0.0",
+  "engines": {
+    "node": "12.18.2",
+    "npm": "6.14.5"
+  },
+  "description": "GetriPay Incentives Service",
+  "main": "server/app.js",
+  "scripts": {
+    "clean": "rm -rf build && mkdir build",
+    "build-server": "babel -d ./build ./server -s",
+    "build": "npm run clean && npm run build-server",
+    "start": "node ./build/app.js",
+    "start-dev": "node ./server/app.js --exec babel-node - js",
+    "server": "nodemon ./server/app.js --exec babel-node - js"
+  },
+  "keywords": [
+    "GetriPay",
+    "Incentives"
+  ],
+  "author": "Moses Ebenezer",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "@babel/preset-stage-0": "^7.8.3",
+    "axios": "^0.21.1",
+    "babel-polyfill": "^6.26.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-validator": "^6.10.0",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "swagger-ui-express": "^4.1.6",
+    "ts-node": "^9.1.1"
+  }
+}
