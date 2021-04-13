@@ -5,4 +5,9 @@ Pre-configured for Docker and Babel.
 
 Bioler Plate uses Class-based Object Oriented Programming.
 
-Run npm install to get started. Also remember to add your own AtlasUrl to your .env file.
+### Getting Started. 
+```
+$ npm install
+```
+Run that above command to install dependencies and get started. Also remember to add your own AtlasUrl to your .env file.
+Then build your project from there.
